@@ -28,7 +28,7 @@ print(f"Centroid of Class 2: {centroid_2}")
 print(f"Spread of Class 1: {spread_1}")
 print(f"Spread of Class 2: {spread_2}")
 
-output:
+
  
 
 
@@ -63,6 +63,9 @@ output:
 Mean of total_emission: 64091.24414739476
 Variance of total_emission: 52119322663.65157
 
+
+
+
 A3)
 
 Take any two feature vectors from your dataset. Calculate the Minkwoski distance with r from 1 to 10. Make a plot of the distance and observe the nature of this graph.
@@ -92,7 +95,6 @@ plt.title("Minkowski Distance vs. r")
 plt.grid(True)
 plt.show()
 
-output:
 
  
 
@@ -123,6 +125,10 @@ print("Testing Set Size:", X_test.shape)
 output:
 Training set size(43,29)
 Testing set size(19,29)
+
+
+
+
 A5)
 Train a kNN classifier (k =3) using the training set obtained from above exercise. 
 import pandas as pd
@@ -159,6 +165,10 @@ knn.fit(X_train_scaled, y_train)
 accuracy = knn.score(X_test_scaled, y_test)
 print(f"kNN Model Accuracy: {accuracy * 100:.2f}%")
 KNN modelaccuracy:100.00% 
+
+
+
+
 A6)
 # Evaluate the kNN model using the test set
 accuracy = knn.score(X_test_scaled, y_test)
@@ -167,6 +177,11 @@ accuracy = knn.score(X_test_scaled, y_test)
 print(f"Accuracy of kNN model on the test set: {accuracy * 100:.2f}%")
 output:
 KNN modelaccuracy:100.00% 
+
+
+
+
+
 A7)
 Use the predict() function to study the prediction behavior of the classifier for test vectors. 
 >>> neigh.predict(X_test) 
@@ -185,6 +200,11 @@ print(f"Predicted class for the first test vector: {predicted_class[0]}")
 output:
 predicted classes for test set:[‘Algeria’,Afghanisthan’]
 predicted class for the first test  vector:Algeria
+
+
+
+
+
 A8)
 Make k = 1 to implement NN classifier and compare the results with kNN (k = 3). Vary k from 1 to 11 and make an accuracy plot
 Import pandas as pd
@@ -232,6 +252,9 @@ plt.xticks(range(1, 12))
 plt.grid(True)
 plt.show()
  
+
+
+
 A9)
 Please evaluate confusion matrix for your classification problem. From confusion matrix, the other performance metrics such as precision, recall and F1-Score measures for both training and test data. Based on your observations, infer the models learning outcome (underfit / regularfit / overfit)
 import numpy as np
